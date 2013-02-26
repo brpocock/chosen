@@ -170,6 +170,34 @@
 .chzn-container-multi .chzn-choices .search-field .default {
   color: #999;
 }
+
+
+.chzn-container-multi .chzn-choices .warning.search-choice {
+  -webkit-border-radius: 3px;
+  -moz-border-radius   : 3px;
+  border-radius        : 3px;
+  -moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;
+  background-color: #e4e4e4;
+  /* this part is different for .warning */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#eeeeee', GradientType=0 ); 
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, #eeccaa), color-stop(15%, #ffffff));
+  background-image: -webkit-linear-gradient(top, #eeccaa 1%, #ffffff 15%);
+  background-image: -moz-linear-gradient(top, #eeccaa 1%, #ffffff 15%);
+  background-image: -o-linear-gradient(top, #eeccaa 1%, #ffffff 15%);
+  background-image: linear-gradient(#eeccaa 1%, #ffffff 15%);
+  color: #c16e00;
+  border: 1px solid #e93; 
+  /* resume sameness */
+  line-height: 13px;
+  padding: 3px 20px 3px 5px;
+  margin: 3px 0 3px 5px;
+  position: relative;
+  cursor: default;
+}
+
+
 .chzn-container-multi .chzn-choices .search-choice {
   -webkit-border-radius: 3px;
   -moz-border-radius   : 3px;
