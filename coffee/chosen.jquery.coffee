@@ -323,13 +323,13 @@ class Chosen extends AbstractChosen
 
   choice_destroy: (link) ->
     if this.result_deselect (link.attr "rel")
-      @choices -= 1
+      #@choices -= 1
       this.show_search_field_default()
-
       this.results_hide() if @is_multiple and @choices > 0 and @search_field.val().length < 1
-
-      link.parents('li').first().remove()
-
+      
+      #link.parents('li').first().remove()
+      
+      link.parent('li').toggleClass('warning')
       this.search_field_scale()
 
   results_reset: ->

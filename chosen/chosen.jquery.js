@@ -331,7 +331,7 @@ Copyright (c) 2011 by Harvest
     __extends(Chosen, _super);
 
     function Chosen() {
-      return Chosen.__super__.constructor.apply(this, arguments);
+      Chosen.__super__.constructor.apply(this, arguments);
     }
 
     Chosen.prototype.setup = function() {
@@ -737,12 +737,11 @@ Copyright (c) 2011 by Harvest
 
     Chosen.prototype.choice_destroy = function(link) {
       if (this.result_deselect(link.attr("rel"))) {
-        this.choices -= 1;
         this.show_search_field_default();
         if (this.is_multiple && this.choices > 0 && this.search_field.val().length < 1) {
           this.results_hide();
         }
-        link.parents('li').first().remove();
+        link.parent('li').toggleClass('warning');
         return this.search_field_scale();
       }
     };
