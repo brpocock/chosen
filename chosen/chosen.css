@@ -197,6 +197,13 @@
   cursor: default;
 }
 
+.chzn-container-multi .chzn-choices .warning.search-choice a {
+	background: url('chosen-sprite@1x.png') 0px -27px no-repeat;
+}
+
+.chzn-container-multi .chzn-choices .warning.search-choice a:hover {
+	background: url('chosen-sprite@1x.png') -13px -27px no-repeat;
+}
 
 .chzn-container-multi .chzn-choices .search-choice {
   -webkit-border-radius: 3px;
